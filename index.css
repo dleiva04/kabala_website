@@ -9,4 +9,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(assets/background.png);
+    background-position: center;
+    background-size: cover;
 }
