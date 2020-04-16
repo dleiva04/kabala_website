@@ -9,7 +9,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(assets/background.png);
+    background: url(assets/background_M.png);
     background-position: center;
     background-size: cover;
 }
+
+
+@media screen and (min-width: 600px) {
+    .main{
+        background: url(assets/background.png);
+    }
+}
+
