@@ -17,7 +17,7 @@ html, body {
 h2 {
     color: white;
     font-size: 4em;
-    text-align: end;
+    display: inline-block;
     margin-bottom: .5em;
 }
 
@@ -25,7 +25,7 @@ p {
     color: white;
     font-size: 2em;
     line-height: 1.4em;
-    text-align: end;
+    display: inline-block;
 }
 
 .imgSettings {
@@ -48,11 +48,14 @@ p {
     width: 100%;
     padding: 4em 1em;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .left {
-    width: 30%;
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .right {
@@ -67,17 +70,13 @@ p {
     height: 20%;
 }
 
-@media only screen and (max-width: 1400px) {
-    .left {
-        width: 50%;
-    }
-}
-
 @media only screen and (max-width: 1000px) {
     h2 {
         font-size: 3em;
+        display: block;
     }
     p {
+        display: block;
         font-size: 1.5em;
         line-height: 1.4em;
     }
@@ -103,6 +102,7 @@ p {
         height: auto;
     }
     .left {
+        display: block;
         margin-top: auto;
     }
     .right {
