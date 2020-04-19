@@ -1,3 +1,7 @@
+/* ========================================================================================================= */
+/* Fonts */
+/* ========================================================================================================= */
+
 @font-face {
     font-family: 'NeoGramHeavy';
     src: url('../assets/fonts/NeoGramHeavy.ttf');
@@ -7,6 +11,11 @@
     font-family: 'NeoGramLight';
     src: url('../assets/fonts/NeoGramLight.ttf');
 }
+/* ========================================================================================================= */
+
+/* ========================================================================================================= */
+/* General styles */
+/* ========================================================================================================= */
 
 html, body {
     margin: 0;
@@ -28,7 +37,16 @@ p {
     display: inline-block;
 }
 
-.imgSettings {
+
+.p{
+    padding: 4em;
+}
+
+/* ========================================================================================================= */
+/* Section1 */
+/* ========================================================================================================= */
+
+.section {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,6 +70,14 @@ p {
 }
 
 .left {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.left {
     width: 40%;
     display: flex;
     align-items: flex-start;
@@ -62,12 +88,46 @@ p {
     height: 100%;
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-end;
+    flex-direction: column;
 }
 
 .logo {
     height: 20%;
+}
+
+.arrow{
+    transform: rotate(-90deg);
+    height: 4em;
+    position: relative;
+    top: 80vh;
+    right: 50%;
+}
+
+/* ========================================================================================================= */
+
+.color{
+    background-color: #e3cfc7;
+}
+
+.column{
+    padding: 2em;
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.p-right{
+    text-align: end;
+}
+
+.video{
+    width: 100%;
+    height: 400px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -111,5 +171,18 @@ p {
     }
     .logo {
         height: 8em;
+    }
+
+    .color{
+        flex-direction: column;
+    }
+    .column{
+        width: 100% !important;
+        padding: 2em;
+        justify-content: center;
+    }
+    .video{
+        width: 100%;
+        height: 100%;
     }
 }
