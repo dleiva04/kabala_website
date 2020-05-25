@@ -1,0 +1,98 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@tailwind utilities;
+
+/* estilos generales para todo el app */
+html {
+    scroll-behavior: smooth;
+  }
+
+section{
+    height: 100vh;
+}
+
+li{
+    width: 300px;
+    margin: 2.5em 0;
+    list-style: none;
+    text-align: right;
+}
+
+a{
+    font-size: 48px;
+    border-bottom: 2px solid transparent;
+    text-align: right;
+    cursor: pointer;
+}
+
+a:hover{
+    border-bottom: 2px solid white;
+
+}
+
+.carousel{
+    background-image: url(../public/img1.png);
+}
+
+.bg2{
+    background-image: url(../public/shape_bg.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.menu{
+    background-color: #333333;
+    transition: ease-in 4s ease;
+}
+
+.top{
+    height: 75px;
+}
+
+.nav{
+    height: 75px;
+    /* border-radius: 0 0 30px 30px; */
+    position: fixed;
+    top: 0;
+    transition: top 0.4s ease-in-out;
+    width: 100%;
+}
+
+
+.blur{
+    /* background-color: rgba(54, 139, 133, 0.8); */
+    backdrop-filter: blur(10px);
+}
+
+.noBlur{
+    background-color: rgba(54, 139, 133, 1);
+}
+
+.brands{
+    height: 295px;
+}
+
+.test{
+    height: 3000px;
+    background-color: white;
+}
+
+.section1{
+    background-image: url(../public/imgSection1.png);
+    background-repeat: no-repeat;
+
+}
+
+.phone{
+    height: 95%;
+    margin-top: 3em;
+    margin-left: 10%;
+}
+
+.txt{
+    font-size: 4em;
+    margin-bottom: 4em;
+    margin-left: 1em;
+}
